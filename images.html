@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <title>images</title>
+  </head>
+  <body>
+    <b>Example of moving image.</b><br />
+    <img
+      src="images/cartoon-excited.gif"
+      alt="cartoon-excited"
+      width="150"
+      height="100"
+    />
+    <hr />
+    <b>Example of broken link of image.</b><br />
+    <img src="images/img.jpg" alt="Broken_Image_Example" />
+    <hr />
+    <b>Example of an image map with clickable regions.</b><br />
+    <img src="images/shapes.jpg" alt="shapes" usemap="#shapes" />
+    <map name="shapes">
+      <area
+        shape="circle"
+        title="red-circle"
+        coords="105,109,76"
+        href="https://en.wikipedia.org/wiki/Circle"
+        alt="red-circle"
+        target="_blank"
+      />
+      <area
+        shape="rect"
+        title="blue-rectangle"
+        coords="227,139,398,294"
+        href="https://en.wikipedia.org/wiki/Rectangle"
+        alt="blue-rectangle"
+        target="_blank"
+      />
+      <area
+        shape="poly"
+        title="green-polygon"
+        coords="548,185,456,227,456,311,548,354,640,312,639,226"
+        href="https://en.wikipedia.org/wiki/Polygon"
+        alt="green-polygon"
+        target="_blank"
+      />
+    </map>
+    <img src="images/scenery.jpg" alt="scenery" usemap="#scenery" width="600" />
+    <map name="scenery">
+      <area
+        shape="default"
+        title="scenery"
+        coords=""
+        href="https://en.wikipedia.org/wiki/Scenery_(disambiguation)"
+        alt="scenery"
+      />
+    </map>
+    <hr />
+    <h2>
+      This is an example of picture element. Please resize the width of your
+      browser window to see the difference.
+    </h2>
+    <br />
+    <picture>
+      <source media="(min-width: 1000px)" srcset="images/red_roses.jpg" />
+      <source media="(min-width: 800px)" srcset="images/yellow_roses.jpg" />
+      <img src="images/white_roses.jpg" alt="white_roses" />
+    </picture>
+    <hr />
+    <a href="index.html">Back to index page</a>
+  </body>
+</html>
